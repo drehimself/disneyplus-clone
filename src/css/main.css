@@ -3,3 +3,76 @@
 @tailwind components;
 
 @tailwind utilities;
+
+.bm-item-list > * > span {
+  @apply text-gray-500 uppercase font-normal text-base tracking-wide ml-8 mb-6;
+}
+
+.bm-item-list > * > span:hover {
+  @apply text-white;
+}
+
+.glide__bullet {
+  width: 10px;
+  height: 10px;
+  background: rgba(0, 0, 0, 0.5);
+  margin-right: 8px;
+  border-radius: 50%;
+}
+
+.glide__bullet--active {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.glide__bullets {
+  position: absolute;
+  bottom: 14px;
+  right: 14px;
+}
+
+.categories .glide__slides, .categories .glide__track {
+  overflow: visible;
+}
+
+.glide__slide {
+  opacity: 0.75;
+  transition: all 0.3s;
+}
+
+.glide__slide:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.glide__slides {
+  padding: 10px 0 !important;
+}
+
+.page-enter-active, .page-leave-active {
+  transition: opacity, transform 0.4s ease-in;
+}
+
+.page-enter, .page-leave-to {
+  opacity: 0;
+  transform: scale(1.1);
+}
+
+.bm-menu {
+  transition: 0.3s;
+  @apply bg-gray-800;
+}
+
+.bm-burger-bars {
+  @apply bg-gray-600;
+}
+
+.bm-burger-button {
+  width: 32px;
+  height: 28px;
+  position: fixed;
+  z-index: 999;
+}
+
+.line-style {
+  height: 10%;
+}
